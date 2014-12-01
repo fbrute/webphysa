@@ -6,7 +6,7 @@ gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'rspec-rails'
   gem 'database_cleaner'
 # fix "could not find a JavaScript runtime"
@@ -55,4 +55,8 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#
+gem 'rails_12factor'
+gem 'unicorn'
+ruby '2.0.0'
 
