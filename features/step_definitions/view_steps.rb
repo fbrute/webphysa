@@ -29,7 +29,7 @@ Then(/^Le titre de la page est "(.*?)"$/) do |arg1|
                                 text: arg1,
                                 visible: false)
 
-  #puts page.title
+  puts page.title
   #expect(page.title).to eq(arg1)
 end
 

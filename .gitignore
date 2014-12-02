@@ -15,4 +15,6 @@
 /log/*.log
 /tmp
 .env
-*.swp
+app/views/layouts/*.swp
+app/views/static_pages/*.swp
+*.swo
