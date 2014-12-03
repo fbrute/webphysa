@@ -60,3 +60,5 @@ gem 'rails_12factor'
 gem 'unicorn'
 ruby '2.0.0'
 
+gem 'bootstrap-sass'
+gem 'actionview-encoded_mail_to'

@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Département de Physique | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="banner">
-  </div>
-
-  <div id="columns">
-    <div id="side">
-      <ul>
-        <li><a href="/static_pages/accueil">Accueil</a></li>
-        <li><a href="/static_pages/recherche">Recherche</a></li>
-        <li><a href="/static_pages/enseignements">Enseignements</a></li>
-        <li><a href="/static_pages/contacts">Contacts</a></li>
-      </ul>
-    </div>
-    <div id="main">
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+ </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container jumbotron">
       <%= yield %>
     </div>
-  </div>
-</body>
+  </body>
+    <%= render 'layouts/footer' %>
 </html>

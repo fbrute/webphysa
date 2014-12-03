@@ -1,0 +1,17 @@
+<!--header class="navbar navbar-fixed-top navbar-inverse "-->
+<header class="navbar navbar-fixed-top navbar-default">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "Département de Physique", root_path , id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav pull-right">
+        <!--ul class="nav navbar-pills pull-right"-->
+          <li><%= link_to "Accueil",        root_path ,class: "active"%></li>
+          <li><%= link_to "Recherche",      recherche_path , role: "presentation"%></li>
+          <li><%= link_to "Enseignements",  enseignements_path %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
